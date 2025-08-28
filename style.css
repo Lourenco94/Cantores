@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo */
+body {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* overlay escuro */
+        url("https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2") no-repeat center center fixed;
+    background-size: cover;
+    color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Container central */
+center {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    width: 400px;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ff4b5c;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Informações do cantor */
+#imagem img {
+    border-radius: 10px;
+    margin: 15px 0;
+    max-width: 100%;
+}
+
+#nome, #sobrenome, #cidade, #pais {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Links */
+#link a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #ff4b5c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+#link a:hover {
+    background: #ff6f91;
+}
+
+/* Input */
+#valorDigitado {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 80%;
+    text-align: center;
+}
+
+/* Botão */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #63b3ff;
+}
+
+/* Mensagem de erro */
+#erro {
+    margin-top: 10px;
+    color: #ff4b5c;
+    font-weight: bold;
+}
